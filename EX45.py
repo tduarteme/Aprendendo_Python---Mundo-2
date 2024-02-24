@@ -16,9 +16,9 @@ computador = randint(0,2)
 print("JO")
 sleep(1)
 print("KEN")
-sleep(2)
+sleep(1)
 print("PÔ")
-sleep(3)
+sleep(1)
 
 print("-=*"*20)
 
