@@ -19,8 +19,8 @@ while r == "S":
         
     r = str(input("Deseja continuar [S/N]: ")).strip() .upper()[0]
 media = soma / cont
-print ("Você digitou {} números e média entre eles equivale a {}" .format(cont, media))
-print ("O maior número foi {} e o menor {}" .format(maior, menor))
+print ("Você digitou {} números e média entre eles equivale a {}." .format(cont, media))
+print ("O maior número foi {} e o menor {}." .format(maior, menor))
 
 print("→ FIM")
 
