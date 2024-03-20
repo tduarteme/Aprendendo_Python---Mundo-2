@@ -12,7 +12,7 @@
 
 Seu programa deverá realizar a operação solicitada em cada caso."""
 
-from time import sleep
+#from time import sleep
 n1 = int(input("Primeiro Valor: "))
 n2 = int(input("Segundo Valor:  "))
 options = 0
@@ -25,8 +25,8 @@ while options != 5:
           [3] MAIOR
           [4] NOVOS NÚMEROS
           [5] SAIR
-      
         \033[m """)
+    
     options = int(input("Escolha a Opção Desejada: "))
 
     if options == 1:
@@ -40,21 +40,22 @@ while options != 5:
     elif options == 3:
         if n1 > n2:
             maior = n1
-            print("O maior é {}".format(maior))
+
         else:
             maior = n2
-            print("O maior é {}" .format(maior))
-        
+            print("O maior valor entre {} e {} é {} ..." .format(n1,n2,maior))
+    
     elif options == 4:
         print("Informe os valores novamente ...")
         n1 = int(input("Primeiro Valor: "))
         n2 = int(input("Segundo Valor:  "))
 
     elif options == 5:
-        print("Saindo ...")
-        sleep(2)
-
+        print ("Saindo ...")
+    
     else:
-        print("Opção inválida")
+        print ("Opção inválida, escolha umas das seguintes opções ...")
 
-print("\033[0;37;40mTérmino do Programa, volte sempre!!!\033[m")
+    print("=*" * 10)
+
+print ("\033[0;37;40mTérmino do Programa, volte sempre!!!\033[m")
